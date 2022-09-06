@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <title>Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gold;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    float: left;
+    border-bottom: 3px solid gold;
+}
+
+header p{
+    width: 110px;
+    height: 70px;
+    padding-top: 40px;
+    margin-top: 16px;
+    margin-left: 16px;
+    text-align: center;
+    color: beige;
+    background-color:blueviolet;
+    border-radius: 500px;
+    box-shadow: 2px 2px 8px gold;
+}
+
+header p:hover{
+opacity: 1;
+transition: all 3s linear;
+transform: rotate(1800deg);
+}
+
+.banner{
+    width: 100%;
+    height: 871px;
+    background-color: gold;
+}
+
+.content{
+    width: 100%;
+    height: 1000px;
+    background-color: blueviolet;
+    float: left;
+    background-image: url("https://data.1freewallpapers.com/download/lake-twilight-moon-dark-landscape-1600x900.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+    background-attachment: fixed;
+}
+.content h1{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.233);
+    text-align: center;
+    width: 30%;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    border-left: 3px solid rgb(255, 255, 255);
+    border-right: 3px solid rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.contentSec{
+    width: 50%;
+    height: 500px;
+    background-color: silver;
+    float: left;
+    text-align: center;
+    font-size: 23px;
+}
+.contentSec table{
+    width: 100%;
+    height: auto;
+    border: 2px solid gainsboro;
+    border-collapse: collapse;
+}
+.contentSec tr :hover{
+    background-color: gray;
+    color: white;
+}
+
+.contentSec th{
+    border: 1px solid gainsboro;
+}
+
+.contentSec th,td{
+    border: 1px solid gainsboro;
+    padding: 6px;
+}
+
+.btn{
+    width: 50px;
+    height: 30px;
+    background-color: blueviolet;
+    color: black;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: 2px;
+}
+
+.btn:hover{
+background-image: linear-gradient(to right,rgb(199, 199, 199) 3%,rgb(1,1,1));
+color:blueviolet;
+transition: all 0.5s linear;
+}
+
+.contentSec2{
+    width: 50%;
+    height: 500px;
+    background-color: rgb(90, 90, 90);
+    float: left;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    float: left;
+}
+    .content{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to right,rgb(238, 217, 34) 3%,rgb(128, 28, 185));
+    color:blueviolet;
+    transition: all 0.5s linear;
+}
+
+.hoverzoom{
+    position: relative;
+    width: 33%;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+
+.hoverzoom img{
+    width: 100%;
+    height: 100%;
+}
+
+.hoverzoom:hover img{
+    transform: scale(1.4);
+    transition: all 1.5s;
+}
+
+.retina{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    text-align: center;
+    padding: 30px;
+    background:none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+
+.hoverzoom:hover .retina{
+    opacity: 1;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+.hoverzoom .retina p{
+    color: white;
+    margin-top: 25%;
+    width: 90%;
+    position: relative;
+    left: -33px;
+}
+
+.hoverzoom .retina a{
+    display: block;
+    width: 150px;
+    background-color: gold;
+    border: 1px solid goldenrod;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+</style>
+<body>
+    <section class="navbarra">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="./oie_uQvyKSJepNor.png" alt="logo" style="width: 150px; border-radius: 15px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">Home <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contato.html">Endereço físico</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Formas de contato
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Whatsapp</a>
+                    <a class="dropdown-item" href="#">Telefone</a>
+                    <a class="dropdown-item" href="#">E-mail</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+
+        <section class="content">
+            <section class="hoverzoom">
+                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <section class="retina">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
+                <a href="#">Saiba mais</a>
+            </section>
+            </section>
+            <section class="hoverzoom">
+                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <section class="retina">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
+                <a href="#">Saiba mais</a>
+            </section>
+            </section>
+            <section class="hoverzoom">
+                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <section class="retina">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
+                <a href="#">Saiba mais</a>
+            </section>
+            </section>
+            <section class="hoverzoom">
+                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <section class="retina">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
+                <a href="#">Saiba mais</a>
+            </section>
+            </section>
+            <section class="hoverzoom">
+                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <section class="retina">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
+                <a href="#">Saiba mais</a>
+            </section>
+            </section>
+            <section class="hoverzoom">
+                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <section class="retina">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
+                <a href="#">Saiba mais</a>
+            </section>
+            </section>
+            <section class="hoverzoom">
+                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <section class="retina">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
+                <a href="#">Saiba mais</a>
+            </section>
+            </section>
+            <section class="hoverzoom">
+                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <section class="retina">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
+                <a href="#">Saiba mais</a>
+            </section>
+            </section>
+            <section class="hoverzoom">
+                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <section class="retina">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
+                <a href="#">Saiba mais</a>
+            </section>
+        </section>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
