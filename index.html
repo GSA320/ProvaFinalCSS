@@ -9,33 +9,64 @@
     <link rel="stylesheet" href="./style.css">
     <title>Ayrton fotografias</title>
   </head>
-  <body style="background-color: gold;">
+  <body style="background-color: gold; min-width: 320px; max-width: 3000px;">
     <section class="navbarra">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html"><img src="./oie_uQvyKSJepNor.png" alt="logo" style="width: 150px; border-radius: 15px;"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+            <a class="navbar-brand" href="index.html"><img src="./oie_uQvyKSJepNor.png" alt="logo" style="max-width: 150px; border-radius: 15px; float: left;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="./index.html">Home <span class="sr-only">(Página atual)</span></a>
+                  <a class="nav-link" href="./index.html"><p>Home</p><span class="sr-only">(Página atual)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./catalogo.html">Catálogo</a>
+                  <a class="nav-link" href="./catalogo.html"><p>Catálogo</p></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./contato.html">Endereço físico</a>
+                  <a class="nav-link" href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"><p>Sugestões</p></a>
                 </li>
                 <li class="nav-item dropdown">
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nova mensagem</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Destinatário:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Mensagem:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Formas de contato
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Whatsapp</a>
-                    <a class="dropdown-item" href="#">Telefone</a>
-                    <a class="dropdown-item" href="#">E-mail</a>
+                    <a class="dropdown-item" href="#zap">Whatsapp</a>
+                    <a class="dropdown-item" href="#zap">Telefone</a>
+                    <a class="dropdown-item" href="#email">E-mail</a>
                   </div>
+                
                 </li>
               </ul>
             </div>
@@ -45,7 +76,19 @@
 
         <section class="container">
             <div class="coluna">
-                
+                <h5>
+                  Somos um grupo de fotógrafos dedicados a vender diversas imagens sob encomenda.
+                  Caso haja interesse em visualizar nosso catálogo, clique <a href="./catalogo.html">aqui</a> 
+                  para explorar.<br>
+                  Nossa história: <br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar convallis 
+                  augue eu tincidunt. Donec non malesuada enim. Nulla porta ipsum ac ultrices consectetur. 
+                  Cras eu scelerisque magna, ut eleifend arcu. Nunc ultrices, dui eu vehicula bibendum, 
+                  leo elit maximus nisi, nec accumsan risus eros sed ligula. Donec sem mauris, 
+                  dignissim ac interdum vel, sagittis sodales sem. Suspendisse mollis metus a ligula commodo,
+                  non pretium ex fermentum. Curabitur scelerisque maximus tempus. Praesent a nisl eu odio ultricies 
+                  tempus non ut sapien. 
+                </h5>
             </div>
             <div class="coluna">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -54,7 +97,7 @@
                       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner" style="height: 300px;">
+                    <div class="carousel-inner" style="min-width: 200px;">
                       <div class="carousel-item active">
                         <img class="d-block w-100" src="https://www.grupoescolar.com/wp-content/uploads/2021/03/paisagem-2C.jpg" alt="Primeiro Slide">
                       </div>
@@ -74,22 +117,74 @@
                       <span class="sr-only">Próximo</span>
                     </a>
                   </div>
+                  <h5 style="font-size: 19px">
+                    Destaques dos nossos melhores profissionais acima
+                  </h5>
             </div>
         </section>
+<!-- Modal -->
+<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Endereço de email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Selecione a quantidade desejada:</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>5</option>
+              <option>10</option>
+              <option>15</option>
+              <option> + </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">Selecione o tempo máximo de espera:</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+              <option>1 semana</option>
+              <option>2 semana</option>
+              <option>3 semana</option>
+              <option>4 semana</option>
+              <option> + </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Descreva o pedido:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Cenário, cores, link de exemplo, objeto específico, etc."></textarea>
+          </div>
+        </form>
+                <div class="tescto"> Entraremos em contato assim que possível para a negociação</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary"><a href="./index.html">Enviar</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     </section>
-    <section class="content"> <h1>*Insíra o cabeçalho aqui*</h1></section>
+    <section class="content"> <h1 data-toggle="modal" data-target="#modalExemplo">Faça um pedido clicando aqui</h1></section>
 
-
-
-
-
-
-
-
-
-
-<footer></footer>
+    
+<section class="upfooter">
+  <h5 id="zap" style="min-width: 430px">Whatsapp: <h6>99 99999-9999</h6></h5> 
+  <h5 id="email">E-mail: <h6>abcdefgh@gmail.com</h6></h5> 
+  
+</section>
+<footer><h4>Todos os direitos reservados a G.Santos</h4></footer>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

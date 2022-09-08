@@ -137,7 +137,7 @@ footer{
     background-color: black;
     float: left;
 }
-    .content{
+.content{
     width: 100%;
     height: auto;
     background-image: linear-gradient(to right,rgb(238, 217, 34) 3%,rgb(128, 28, 185));
@@ -146,9 +146,13 @@ footer{
 }
 
 .hoverzoom{
+    margin: auto;
     position: relative;
-    width: 33%;
-    height: auto;
+    width: 100%;
+    min-width: 405px;
+    max-width: 33%;
+    min-height: 100px;
+    max-height: 3000px;
     overflow: hidden;
     float: left;
     padding-left: 4px;
@@ -156,7 +160,11 @@ footer{
 }
 
 .hoverzoom img{
+    object-fit: cover;
+    max-width: 100%;
+    min-width: 250px;
     width: 100%;
+    min-height: 300px;
     height: 100%;
 }
 
@@ -185,10 +193,11 @@ footer{
 
 .hoverzoom .retina p{
     color: white;
+    margin: auto;
     margin-top: 25%;
-    width: 90%;
+    width: 95%;
+    font-size: 12px;
     position: relative;
-    left: -33px;
 }
 
 .hoverzoom .retina a{
@@ -206,102 +215,134 @@ footer{
 </style>
 <body>
     <section class="navbarra">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html"><img src="./oie_uQvyKSJepNor.png" alt="logo" style="width: 150px; border-radius: 15px;"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+            <a class="navbar-brand" href="index.html"><img src="./oie_uQvyKSJepNor.png" alt="logo" style="max-width: 150px; border-radius: 15px; float: left;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="./index.html">Home <span class="sr-only">(Página atual)</span></a>
+                  <a class="nav-link" href="./index.html"><p>Home</p><span class="sr-only">(Página atual)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./catalogo.html">Catálogo</a>
+                  <a class="nav-link" href="./catalogo.html"><p>Catálogo</p></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./contato.html">Endereço físico</a>
+                  <a class="nav-link" href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"><p>Sugestões</p></a>
                 </li>
                 <li class="nav-item dropdown">
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nova mensagem</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Destinatário:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Mensagem:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Formas de contato
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Whatsapp</a>
-                    <a class="dropdown-item" href="#">Telefone</a>
-                    <a class="dropdown-item" href="#">E-mail</a>
+                    <a class="dropdown-item" href="index.html">Whatsapp</a>
+                    <a class="dropdown-item" href="index.html">Telefone</a>
+                    <a class="dropdown-item" href="index.html">E-mail</a>
                   </div>
+                
                 </li>
               </ul>
             </div>
           </nav>
     </section>
-
+<div class="container">
         <section class="content">
             <section class="hoverzoom">
                 <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
                 <section class="retina">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
-                <a href="#">Saiba mais</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>
+                <a href="#">Visualizar</a>
             </section>
             </section>
             <section class="hoverzoom">
-                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <img src="https://fotodicasbrasil.com.br/wp-content/uploads/2015/06/Destacada-do-Artigo-Fotografias-de-Cachoeira.jpg" alt="">
                 <section class="retina">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
-                <a href="#">Saiba mais</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>
+                <a href="#">Visualizar</a>
             </section>
             </section>
             <section class="hoverzoom">
-                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <img src="https://static.todamateria.com.br/upload/58/45/5845613f4b7d9-o-que-e-paisagem.jpg" alt="">
                 <section class="retina">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
-                <a href="#">Saiba mais</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>
+                <a href="#">Visualizar</a>
             </section>
             </section>
             <section class="hoverzoom">
-                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <img src="https://s3-sa-east-1.amazonaws.com/revista.mobiauto/ImagensSUVs/Carros+que+n%C3%A3o+deram+certo+-+fracassados/Carros-que-n%C3%A3o-deram-certo-no-Brasil-Chevrolet-Agile.jpg" alt="">
                 <section class="retina">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
-                <a href="#">Saiba mais</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>
+                <a href="#">Visualizar</a>
             </section>
             </section>
             <section class="hoverzoom">
-                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <img src="https://img.freepik.com/fotos-premium/paisagem-natural-da-cachoeira-huangguoshu-em-guizhou_1417-8034.jpg" alt="">
                 <section class="retina">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
-                <a href="#">Saiba mais</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>
+                <a href="#">Visualizar</a>
             </section>
             </section>
             <section class="hoverzoom">
-                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <img src="https://blog.emania.com.br/wp-content/uploads/2017/10/fotografia-de-paisagem-urbana.jpg" alt="">
                 <section class="retina">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
-                <a href="#">Saiba mais</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>
+                <a href="#">Visualizar</a>
             </section>
             </section>
             <section class="hoverzoom">
-                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <img src="https://pos.una.br/app/uploads/2021/08/Paisagismo_e_Paisagem_Urbana_vitrine.jpg" alt="">
                 <section class="retina">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
-                <a href="#">Saiba mais</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>
+                <a href="#">Visualizar</a>
             </section>
             </section>
             <section class="hoverzoom">
-                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <img src="https://blog.grafittiartes.com.br/wp-content/uploads/2021/05/Grafitti_Blog_mai_05.05.jpg" alt="">
                 <section class="retina">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
-                <a href="#">Saiba mais</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>
+                <a href="#">Visualizar</a>
             </section>
             </section>
             <section class="hoverzoom">
-                <img src="https://img.besthqwallpapers.com/Uploads/14-12-2018/74442/nissan-gt-r-luxury-tuning-japanese-sports-car-drift-lowrider.jpg" alt="">
+                <img src="https://thumbs.dreamstime.com/b/c%C3%A9u-aberto-10712425.jpg" alt="">
                 <section class="retina">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>>
-                <a href="#">Saiba mais</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat purus sed tincidunt egestas. Vivamus malesuada porta ultricies. Morbi ac tortor in lacus bibendum vestibulum. Nam a facilisis metus. Quisque luctus vestibulum lobortis. Quisque gravida nec turpis non sagittis.</p>
+                <a href="#">Visualizar</a>
             </section>
         </section>
-
+    </div>
+    <footer style="margin-top: 13px;"><h4>Todos os direitos reservados a G.Santos</h4></footer>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
